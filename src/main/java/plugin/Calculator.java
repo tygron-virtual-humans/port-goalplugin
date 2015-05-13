@@ -35,7 +35,7 @@ public class Calculator {
 
         ClassLoader loader = this.getClass().getClassLoader();
         Class opClass = loader.loadClass(Calculator.class.getPackage().getName()
-                + "." + operation);
+                + ".operations." + operation);
         return ((Operation) opClass.newInstance()).calc(vars);
     }
 }

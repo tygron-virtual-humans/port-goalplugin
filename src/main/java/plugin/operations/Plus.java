@@ -13,7 +13,7 @@ public class Plus extends Operation {
      * Constructor.
      */
     public Plus() {
-        setString("plus");
+        this.setString("plus");
     }
 
     /**

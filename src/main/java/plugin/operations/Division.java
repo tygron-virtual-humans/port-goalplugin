@@ -24,7 +24,7 @@ public class Division extends Operation {
     @Override
     public final double calc(final List<Double> vars) {
         if (vars.size() < 2) {
-           throw new ArithmeticException();
+            throw new ArithmeticException();
         }
         if (vars.get(1) == 0) {
             throw new ArithmeticException();

@@ -45,4 +45,10 @@ public class CalculatorTest {
     public void testCalc() throws Exception {
         assertEquals(expect, (Double) new Calculator().calc(this.op, this.calculation));
     }
+
+    @Test(expected = ClassNotFoundException.class)
+    public void testIllegalAccessException() throws Exception {
+        new Calculator().calc("addition", new ArrayList<Double>());
+    }
+
 }
